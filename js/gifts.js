@@ -78,10 +78,9 @@ export const people = [
         note: "Four swappable faces and arms and legs that move. Ages 3 and up."
       },
       {
-        name: "Grimm’s Counting Rainbow",
-        shop: "Pacifier",
-        url: "https://pacifierkids.com/products/counting-rainbow-by-grimms",
-        note: "Sold out at several shops as of November 18. Check back for a restock."
+        name: "Loog Piano",
+        shop: "Loog",
+        url: "https://loogguitars.com/products/loog-piano?variant=40428272484414"
       },
       {
         name: "Bedtime set",
