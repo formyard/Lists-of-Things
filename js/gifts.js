@@ -42,10 +42,10 @@ export const people = [
             note: "Out of stock online. Call Guiry’s to check the store."
           },
           {
-            name: "Excel aluminum mahl stick",
-            shop: "Art to Art",
-            url: "https://arttoart.net/excel-mahl-stick",
-            note: "Comes apart for storage, with a rubber tip that won’t mark."
+            name: "Creative Mark Professional Mahl Stick",
+            shop: "Jerry’s Artarama",
+            url: "https://www.jerrysartarama.com/professional-mahl-stick-by-creative-mark-45182",
+            note: "Aluminum with a leather-covered tip. Extends from 18 to 36 inches and comes apart into two pieces."
           }
         ]
       },
@@ -160,7 +160,7 @@ export const people = [
         shop: "Yarn Shoppe Denver",
         blackOwned: true,
         url: "https://www.ravelry.com/shops/yarn-shoppe-denver",
-        note: "Call 720-473-2598 to book. Open Monday to Wednesday."
+        note: "Call 720-473-2598 to book."
       },
       {
         name: "Body Butter Discovery Set",
