@@ -57,6 +57,9 @@ or a set, whose `parts` are items:
 | `js/template.js` | Clones a template and fills its `data-field` slots |
 | `js/text.js` | Turns names into ids and formats gift counts |
 | `fonts/` | Jost, self-hosted, with its license |
+| `favicon.svg` | Browser tab icon |
+| `apple-touch-icon.png` | Icon for iPhone and iPad home screens |
+| `og-image.png` | The 1200 × 630 picture shown when the link is shared |
 
 ## Accessibility
 
@@ -67,6 +70,10 @@ The page aims for WCAG 2.2 AAA.
 - Shop links open in a new tab. Each shows an arrow and tells screen readers it opens a new tab.
 - The only motion is the shapes' entrance, and it's turned off when the device asks for reduced motion.
 - Lists keep `role="list"` on purpose, so Safari's screen reader still announces them as lists after their bullets are restyled. HTML validators flag it as redundant.
+
+## Sharing
+
+When the link is shared on X, iMessage, Slack, Facebook and similar apps, they show `og-image.png` with the page title and description. The tags for this are at the top of `index.html`. The image address there is absolute, so update it if the repository or site address changes.
 
 ## Publish
 
