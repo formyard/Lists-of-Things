@@ -7,14 +7,22 @@ export const people = [
         name: "Film and light meter",
         parts: [
           {
-            name: "Sekonic L-308X-U light meter",
-            shop: "Pictureline",
-            url: "https://www.pictureline.com/products/sekonic-l-308x-u-flashmate-light-meter"
+            name: "Sekonic L-508 Cine Zoom Master light meter",
+            shop: "KEH",
+            url: "https://www.keh.com/shop/light-meters-sekonic-l-508-cine-zoom-master-ambi-flash-710791.html?aid=284918-1134116"
           },
           {
-            name: "Ilford Delta 400, 120 film, 5 rolls",
-            shop: "Film Photography Project",
-            url: "https://filmphotographystore.com/products/120-bw-film-ilford-delta-400-single-roll"
+            name: "Sekonic L-308X-U light meter",
+            shop: "Pictureline",
+            url: "https://www.pictureline.com/products/sekonic-l-308x-u-flashmate-light-meter",
+            note: "The alternate if the L-508 sells out. Smaller, with no spot metering."
+          },
+          {
+            name: "Ilford HP5 Plus, 120 film, 5 rolls",
+            shop: "Photodom",
+            blackOwned: true,
+            url: "https://photodom.shop/product/ilford-hp5-plus-black-and-white-film/",
+            note: "Brooklyn film shop. Choose 120 in the format menu."
           }
         ]
       },
@@ -58,10 +66,21 @@ export const people = [
     shape: "triangle",
     gifts: [
       {
-        name: "Thomas & Friends Wooden Railway Figure 8 Set",
-        shop: "Stevenson’s Toys",
-        url: "https://stevensonstoys.com/products/1028911",
-        note: "Thomas, a cargo car and a figure-8 of wooden track. Ages 3 and up. Only 1 was left on November 18, so order soon."
+        name: "Thomas train set",
+        parts: [
+          {
+            name: "Thomas & Friends Exploring Tidmouth Sheds Train Set",
+            shop: "Mattel",
+            url: "https://shop.mattel.com/products/thomas-friends-exploring-tidmouth-sheds-train-set-jll36",
+            note: "Thomas, Harold, a turntable and 8.3 feet of Easy Connect track. Henry and Diesel run on it. Ages 3 and up. Sold out on Mattel’s site, so buy it at the store where you saw it."
+          },
+          {
+            name: "Thomas & Friends Railroad Builder Kit",
+            shop: "Mattel",
+            url: "https://shop.mattel.com/products/thomas-friends-railroad-builder-kit-bundle-jnf84",
+            note: "Percy and about 11 more feet of track that snaps onto the Tidmouth Sheds set. Also sold out online."
+          }
+        ]
       },
       {
         name: "Remo Kids Percussion floor tom",
@@ -92,24 +111,29 @@ export const people = [
           },
           {
             name: "Freight Train by Donald Crews",
-            shop: "Tattered Cover",
-            url: "https://www.tatteredcover.com/products/9780688149000",
-            note: "In stock at the Denver stores for pickup."
+            shop: "The Lit. Bar",
+            blackOwned: true,
+            url: "https://bookshop.org/a/1473/9780688149000",
+            note: "Bronx bookstore. All four books order through its Bookshop.org page."
           },
           {
             name: "Ten Black Dots by Donald Crews",
-            shop: "Pickwick Bookshop",
-            url: "https://pickwickbookshop.com/products/9780061857799"
+            shop: "The Lit. Bar",
+            blackOwned: true,
+            url: "https://bookshop.org/a/1473/9780688135744",
+            note: "Paperback. The board book is on backorder."
           },
           {
             name: "Max Found Two Sticks by Brian Pinkney",
-            shop: "MIT Press Bookstore",
-            url: "https://mitpressbookstore.mit.edu/book/9780689815935"
+            shop: "The Lit. Bar",
+            blackOwned: true,
+            url: "https://bookshop.org/a/1473/9780689815935"
           },
           {
             name: "Robots, Robots Everywhere! by Sue Fliess",
-            shop: "Pacifier",
-            url: "https://pacifierkids.com/products/robots-robots-everywhere-little-golden-book"
+            shop: "The Lit. Bar",
+            blackOwned: true,
+            url: "https://bookshop.org/a/1473/9780449810798"
           }
         ]
       }
@@ -134,20 +158,23 @@ export const people = [
       {
         name: "One-on-one knitting class",
         shop: "Yarn Shoppe Denver",
+        blackOwned: true,
         url: "https://www.ravelry.com/shops/yarn-shoppe-denver",
-        note: "Black-owned. Call 720-473-2598 to book. Open Monday to Wednesday."
+        note: "Call 720-473-2598 to book. Open Monday to Wednesday."
       },
       {
         name: "Body Butter Discovery Set",
         shop: "Organic Bath Co.",
+        blackOwned: true,
         url: "https://www.organicbath.co/products/butter-up-gift-set",
-        note: "Black-owned. A 100% organic set of four body butters."
+        note: "A 100% organic set of four body butters."
       },
       {
         name: "Cowrie Infinity Necklace, gold vermeil",
         shop: "Omi Woods",
+        blackOwned: true,
         url: "https://omiwoods.com/collections/necklaces/products/preorder-the-cowrie-lariat-necklace",
-        note: "Black-owned. Handmade and ships in 3–5 weeks, so give her a card on Christmas that says it’s on the way."
+        note: "Handmade and ships in 3–5 weeks, so give her a card on Christmas that says it’s on the way."
       }
     ]
   }

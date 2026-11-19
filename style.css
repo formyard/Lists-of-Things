@@ -393,6 +393,16 @@
     font-weight: 500;
   }
 
+  .gift__new-tab {
+    inline-size: 0.55em;
+    block-size: 0.55em;
+    margin-inline-start: 0.3em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: square;
+  }
+
   .gift--set > .gift__name {
     font-weight: 700;
   }

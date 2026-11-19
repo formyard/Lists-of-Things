@@ -1,9 +1,11 @@
 import { cloneTemplate, fill } from "./template.js";
 import { giftCount } from "./text.js";
 
-const renderItem = ({ name, shop, note, url }) => {
-  const item = fill(cloneTemplate("item"), { name, shop, note });
-  item.querySelector("a").href = url;
+const shopLine = ({ shop, blackOwned }) => (blackOwned ? `${shop}, Black-owned` : shop);
+
+const renderItem = (gift) => {
+  const item = fill(cloneTemplate("item"), { name: gift.name, shop: shopLine(gift), note: gift.note });
+  Object.assign(item.querySelector("a"), { href: gift.url, target: "_blank", rel: "noopener" });
   return item;
 };
 
