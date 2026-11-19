@@ -16,7 +16,7 @@ Then open http://localhost:8000.
 
 ## Edit the gifts
 
-All gift data lives in `js/gifts.js`. Each person has a `name`, a `shape` (`square`, `triangle` or `circle`) and a list of `gifts`.
+All gift data lives in `js/gifts.js`. Each person has a `name`, a `shape` (`square`, `triangle` or `circle`), a list of `gifts` and, optionally, a `wishlist`.
 
 A gift is either a single item:
 
@@ -40,6 +40,7 @@ or a set, whose `parts` are items:
 }
 ```
 
+- Add a `wishlist` to a person for the things on their own list. It takes the same items and sets as `gifts` and shows below them under its own heading, such as "Rochelle’s wish list".
 - Add `blackOwned: true` to an item to show "Black-owned" after the shop name.
 - Leave out `note` when there's nothing to add.
 - Each person's id comes from their name, so `?for=micah` opens straight to that list.
@@ -48,14 +49,14 @@ or a set, whose `parts` are items:
 
 | File | What it does |
 | --- | --- |
-| `index.html` | Page structure, plus the `<template>` markup for a person, an item, a set and a filter choice |
+| `index.html` | Page structure, plus the `<template>` markup for a person, a wish list, an item, a set and a filter choice |
 | `style.css` | Styles in cascade layers: reset, tokens, base, layout, components, motion, utilities |
 | `js/gifts.js` | The gift data |
 | `js/main.js` | Entry point: renders the lists and starts the filter |
-| `js/render.js` | Builds people, gifts and filter choices from the templates |
+| `js/render.js` | Builds people, wish lists, gifts and filter choices from the templates |
 | `js/filter.js` | Shows one person's list and keeps the choice in the URL |
 | `js/template.js` | Clones a template and fills its `data-field` slots |
-| `js/text.js` | Turns names into ids and formats gift counts |
+| `js/text.js` | Turns names into ids and formats the gift and wish list counts |
 | `fonts/` | Jost, self-hosted, with its license |
 | `favicon.svg` | Browser tab icon |
 | `apple-touch-icon.png` | Icon for iPhone and iPad home screens |
@@ -65,7 +66,8 @@ or a set, whose `parts` are items:
 
 The page aims for WCAG 2.2 AAA.
 
-- The person filter is a native radio group, and a status message announces how many gifts are showing.
+- The person filter is a native radio group, and a status message announces how many gifts and wish list items are showing.
+- Each person is a section named by their heading, and a wish list is a nested section with its own heading, so screen reader users can jump between them.
 - Text contrast is at least 7:1. The large labels on the shapes are at least 4.5:1, the AAA level for large text.
 - Shop links open in a new tab. Each shows an arrow and tells screen readers it opens a new tab.
 - The only motion is the shapes' entrance, and it's turned off when the device asks for reduced motion.

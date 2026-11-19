@@ -5,4 +5,9 @@ export const toId = (text) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
-export const giftCount = (count) => `${count} ${count === 1 ? "gift" : "gifts"}`;
+const plural = (count, noun) => `${count} ${noun}${count === 1 ? "" : "s"}`;
+
+export const tally = ({ gifts, wishlist = [] }) =>
+  wishlist.length
+    ? `${plural(gifts.length, "gift")} and ${plural(wishlist.length, "wish list item")}`
+    : plural(gifts.length, "gift");

@@ -1,13 +1,14 @@
-import { giftCount } from "./text.js";
+import { tally } from "./text.js";
 
 const FIELD = "for";
 
-const totalGifts = (people) => people.reduce((sum, { gifts }) => sum + gifts.length, 0);
+const combine = (people) => ({
+  gifts: people.flatMap(({ gifts }) => gifts),
+  wishlist: people.flatMap(({ wishlist = [] }) => wishlist)
+});
 
 const describe = (people, chosen) =>
-  chosen
-    ? `Showing ${giftCount(chosen.gifts.length)} for ${chosen.name}.`
-    : `Showing all ${giftCount(totalGifts(people))}.`;
+  chosen ? `Showing ${tally(chosen)} for ${chosen.name}.` : `Showing all ${tally(combine(people))}.`;
 
 const readChoice = () => new URLSearchParams(location.search).get(FIELD);
 

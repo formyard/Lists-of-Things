@@ -22,6 +22,7 @@
   body,
   h1,
   h2,
+  h3,
   p,
   ul,
   fieldset {
@@ -119,7 +120,8 @@
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     line-height: 1;
   }
 
@@ -165,6 +167,14 @@
     border-block-end: var(--bar) solid var(--ink);
   }
 
+  .person:has(> .wishlist) > .person__head {
+    grid-row: span 2;
+  }
+
+  .wishlist {
+    grid-column: -2;
+  }
+
   .colophon,
   .people__fallback {
     padding: var(--space-m) var(--gutter) var(--space-l);
@@ -174,6 +184,10 @@
     .masthead,
     .person {
       grid-template-columns: minmax(0, 1fr);
+    }
+
+    .person:has(> .wishlist) > .person__head {
+      grid-row: auto;
     }
   }
 }
@@ -421,6 +435,19 @@
     margin-block-start: var(--space-xs);
     padding-inline-start: var(--space-m);
     border-inline-start: 4px solid var(--accent);
+  }
+
+  .wishlist {
+    display: grid;
+    gap: calc(var(--space-m) * 1.5);
+    padding-block-start: var(--space-m);
+    border-block-start: var(--bar) solid var(--accent);
+  }
+
+  .wishlist__title {
+    font-size: calc(var(--step-1) * 1.5);
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
 
   @media (width <= 48rem) {

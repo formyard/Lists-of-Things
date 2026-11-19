@@ -4,27 +4,10 @@ export const people = [
     shape: "square",
     gifts: [
       {
-        name: "Film and light meter",
-        parts: [
-          {
-            name: "Sekonic L-508 Cine Zoom Master light meter",
-            shop: "KEH",
-            url: "https://www.keh.com/shop/light-meters-sekonic-l-508-cine-zoom-master-ambi-flash-710791.html?aid=284918-1134116"
-          },
-          {
-            name: "Sekonic L-308X-U light meter",
-            shop: "Pictureline",
-            url: "https://www.pictureline.com/products/sekonic-l-308x-u-flashmate-light-meter",
-            note: "The alternate if the L-508 sells out. Smaller, with no spot metering."
-          },
-          {
-            name: "Ilford HP5 Plus, 120 film, 5 rolls",
-            shop: "Photodom",
-            blackOwned: true,
-            url: "https://photodom.shop/product/ilford-hp5-plus-black-and-white-film/",
-            note: "Brooklyn film shop. Choose 120 in the format menu."
-          }
-        ]
+        name: "Nintendo Switch 2 + Mario Kart World bundle",
+        shop: "Nintendo",
+        url: "https://www.nintendo.com/store/products/nintendo-switch-2-mario-kart-world-bundle-128067/",
+        note: "Mario Kart World comes as a download code, with 3 months of Switch Online. Nintendo’s Black Friday sale on it runs November 22 to December 5."
       },
       {
         name: "Takach hand brayer, 4 inch, medium",
@@ -145,9 +128,9 @@ export const people = [
     gifts: [
       {
         name: "Ninja SLUSHi frozen drink maker",
-        shop: "SharkNinja",
-        url: "https://www.sharkninja.com/ninja-slushi-professional-frozen-drink-maker/FS301.html",
-        note: "Stone & Gold is sold out. Choose a color that’s in stock."
+        shop: "Crate & Barrel",
+        url: "https://www.crateandbarrel.com/ninja-slushi-professional-frozen-drink-maker/s505370",
+        note: "In stock at Crate & Barrel. SharkNinja’s own page is sold out."
       },
       {
         name: "Violin lessons",
@@ -159,8 +142,8 @@ export const people = [
         name: "One-on-one knitting class",
         shop: "Yarn Shoppe Denver",
         blackOwned: true,
-        url: "https://www.ravelry.com/shops/yarn-shoppe-denver",
-        note: "Call 720-473-2598 to book."
+        url: "https://book.squareup.com/appointments/a77a69c5-6516-4379-90b6-97eaac54f50a/location/5BAC0T9X1G2KH/services?buttonTextColor=ffffff&color=c1175b&locale=en&referrer=so",
+        note: "Book a time online, or call 720-473-2598 to ask for a private lesson."
       },
       {
         name: "Body Butter Discovery Set",
@@ -175,6 +158,39 @@ export const people = [
         blackOwned: true,
         url: "https://omiwoods.com/collections/necklaces/products/preorder-the-cowrie-lariat-necklace",
         note: "Handmade and ships in 3–5 weeks, so give her a card on Christmas that says it’s on the way."
+      }
+    ],
+    wishlist: [
+      {
+        name: "Ninja SLUSHi frozen drink maker",
+        shop: "Crate & Barrel",
+        url: "https://www.crateandbarrel.com/ninja-slushi-professional-frozen-drink-maker/s505370",
+        note: "Her shaved ice or smoothie machine. It’s the same SLUSHi as in her gifts, so one covers both."
+      },
+      {
+        name: "Lykke Indigo 5-inch interchangeable needle set, violet case",
+        shop: "Wool and Company",
+        url: "https://www.woolandcompany.com/products/lykke-indigo-5-interchangeable-circular-needle-set-violet-denim-case",
+        note: "Indigo needles in a violet case, so both of her colors. Sizes 4 to 17, with a 40-inch cord. The Lamb Shoppe in Denver (303-322-2223) carries Lykke and may order one. Not from Amazon, which voids the 5-year warranty."
+      },
+      {
+        name: "Lantern Moon swivel cord, 40 inch",
+        shop: "Wool and Company",
+        url: "https://www.woolandcompany.com/products/lantern-moon-swivel-interchangeable-cable",
+        note: "Choose 40 inches. It fits Lykke tips, so order it with the needles."
+      },
+      {
+        name: "Gift card for hand-dyed yarn",
+        shop: "Yarn Shoppe Denver",
+        blackOwned: true,
+        url: "https://squareup.com/gift/5GXDFJ3D6FNCT/order",
+        note: "The shop sells yarn hand-dyed and hand-spun by local fiber artists. She can pick 6–7 matching skeins for a throw or 4–5 for a toddler blanket."
+      },
+      {
+        name: "Lumos Knitting Light, mint",
+        shop: "Lumos",
+        url: "https://lumoslumos.com/products/lumos-knitting-light-main?variant=48858256048376",
+        note: "Opens on Mint. Pumpkin is the orange. Ships free in 2–5 days, with a lifetime warranty."
       }
     ]
   }

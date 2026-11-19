@@ -1,5 +1,5 @@
 import { cloneTemplate, fill } from "./template.js";
-import { giftCount } from "./text.js";
+import { tally } from "./text.js";
 
 const shopLine = ({ shop, blackOwned }) => (blackOwned ? `${shop}, Black-owned` : shop);
 
@@ -17,13 +17,22 @@ const renderSet = ({ name, parts }) => {
 
 const renderGift = (gift) => (gift.parts ? renderSet(gift) : renderItem(gift));
 
-export const renderPerson = ({ id, name, shape, gifts }) => {
-  const section = fill(cloneTemplate("person"), { name, count: giftCount(gifts.length) });
-  const heading = section.querySelector("h2");
-  heading.id = `${id}-name`;
-  section.setAttribute("aria-labelledby", heading.id);
+const renderGroup = (template, fields, headingId, gifts) => {
+  const group = fill(cloneTemplate(template), fields);
+  group.querySelector("h2, h3").id = headingId;
+  group.setAttribute("aria-labelledby", headingId);
+  group.querySelector("ul").append(...gifts.map(renderGift));
+  return group;
+};
+
+const renderWishlist = ({ id, name, wishlist }) =>
+  renderGroup("wishlist", { title: `${name}’s wish list` }, `${id}-wishlist`, wishlist);
+
+export const renderPerson = (person) => {
+  const { id, name, shape, gifts, wishlist } = person;
+  const section = renderGroup("person", { name, count: tally(person) }, `${id}-name`, gifts);
   section.dataset.shape = shape;
-  section.querySelector("ul").append(...gifts.map(renderGift));
+  if (wishlist) section.append(renderWishlist(person));
   return section;
 };
 
