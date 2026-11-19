@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Christmas gift lists for 2026.">
+  <title>Christmas gifts 2026</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#gifts">Skip to the gift lists</a>
+
+  <header class="masthead">
+    <h1 class="title"><span class="title__season">Christmas</span> Gifts 2026</h1>
+
+    <fieldset class="filter" id="filter">
+      <legend class="filter__legend">Show gifts for</legend>
+      <label class="choice choice--all">
+        <input class="visually-hidden" type="radio" name="for" value="all" checked>
+        Everyone
+      </label>
+      <p class="filter__status" id="filter-status" role="status"></p>
+    </fieldset>
+  </header>
+
+  <main class="people" id="gifts">
+    <noscript>
+      <p class="people__fallback">Turn on JavaScript to see the gift lists.</p>
+    </noscript>
+  </main>
+
+  <footer class="colophon">
+    <p>Updated <time datetime="2026-11-18">November 18, 2026</time>. Prices and stock change, so check each shop before ordering.</p>
+  </footer>
+
+  <template id="choice-template">
+    <label class="choice choice--shape">
+      <input class="visually-hidden" type="radio" name="for">
+    </label>
+  </template>
+
+  <template id="person-template">
+    <section class="person">
+      <header class="person__head">
+        <h2 class="person__name" data-field="name"></h2>
+        <p class="person__count" data-field="count"></p>
+      </header>
+      <ul class="gifts" role="list"></ul>
+    </section>
+  </template>
+
+  <template id="item-template">
+    <li class="gift">
+      <a class="gift__link" data-field="name"></a>
+      <p class="gift__shop" data-field="shop"></p>
+      <p class="gift__note" data-field="note"></p>
+    </li>
+  </template>
+
+  <template id="set-template">
+    <li class="gift gift--set">
+      <p class="gift__name" data-field="name"></p>
+      <ul class="gift__parts" role="list"></ul>
+    </li>
+  </template>
+</body>
+</html>
