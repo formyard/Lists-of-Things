@@ -4,10 +4,20 @@ export const people = [
     shape: "square",
     gifts: [
       {
-        name: "Nintendo Switch 2 + Mario Kart World bundle",
-        shop: "Nintendo",
-        url: "https://www.nintendo.com/store/products/nintendo-switch-2-mario-kart-world-bundle-128067/",
-        note: "Mario Kart World comes as a download code, with 3 months of Switch Online. Nintendo’s Black Friday sale on it runs November 22 to December 5."
+        name: "Teenage Engineering EP/BC-1 CD player",
+        shop: "Teenage Engineering",
+        url: "https://teenage.engineering/store/bc-1",
+        note: "A portable CD player with Bluetooth, USB-C audio out and a rechargeable battery. It comes with a starter CD, and cables are sold separately."
+      },
+      {
+        name: "Roland TR-08 Rhythm Composer",
+        shop: "Perfect Circuit",
+        url: "https://www.perfectcircuit.com/roland-boutique-tr-08.html"
+      },
+      {
+        name: "Teenage Engineering PO-12 rhythm",
+        shop: "Perfect Circuit",
+        url: "https://www.perfectcircuit.com/teenage-engineering-po-12-rhythm.html"
       },
       {
         name: "Takach hand brayer, 4 inch, medium",
@@ -31,16 +41,6 @@ export const people = [
             note: "Aluminum with a leather-covered tip. Extends from 18 to 36 inches and comes apart into two pieces."
           }
         ]
-      },
-      {
-        name: "Roland TR-08 Rhythm Composer",
-        shop: "Perfect Circuit",
-        url: "https://www.perfectcircuit.com/roland-boutique-tr-08.html"
-      },
-      {
-        name: "Teenage Engineering PO-12 rhythm",
-        shop: "Perfect Circuit",
-        url: "https://www.perfectcircuit.com/teenage-engineering-po-12-rhythm.html"
       }
     ]
   },
